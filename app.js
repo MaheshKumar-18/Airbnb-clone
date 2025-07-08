@@ -87,7 +87,12 @@ app.use((err, req, res, next) =>{
   res.status(500).render("error.ejs", { err });
 });
 
-app.listen(9090,(req,res)=>{
-  console.log("Server is listening")
+app.get("/",(req,res)=>{
+  res.redirect("/listing");
+})
+
+const port=process.env.PORT || 9090;
+app.listen(port, "0.0.0.0",()=>{
+  console.log("Server is listening");
 });
 
