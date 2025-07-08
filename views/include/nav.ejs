@@ -40,7 +40,12 @@
     let navbar_toggler=document.querySelector(".navbar-toggler");
     let navbar=document.querySelector(".navbar");
     navbar_toggler.addEventListener("click",()=>{
+      if(!navbar.style.height=="400px"){
          navbar.style.height="400px";
+        }
+        else{
+          navbar.style.height="auto";
+        }
     });
     
 </script>
