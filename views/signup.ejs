@@ -1,0 +1,27 @@
+
+<% layout("/layout/boilerplate.ejs") %>
+
+<form method="post" action="/signup"  novalidate class="needs-validation col-6 offset-3">
+    
+    <h1 class="mt-4"><b>SignUP on Wonderlust</b></h1>
+
+    <div class="mt-4">
+        <label for="username" class="form-label"><b>Username</b></label>
+        <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username" required>
+        <div class="invalid-feedback"> Please Enter Username </div>
+        <div class="valid-feedback"> Username looks good!!</div>
+    </div>
+
+    <div class="mt-4">
+        <label for="gmail" class="form-label"><b>Gmail</b></label>
+        <input type="text" class="form-control" id="gmail" placeholder="Enter Gmail-ID" name="gmail" required>
+    </div>
+
+    <div class="mt-4">
+        <label for="password" class="form-label"><b>password</b></label>
+        <input type="password" class="form-control" id="password" placeholder="Enter Password" name="password" required>
+    </div>
+
+    <button class="mt-4 btn btn-danger">Submit</button>
+
+</form>

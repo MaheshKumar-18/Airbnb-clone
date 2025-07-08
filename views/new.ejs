@@ -1,0 +1,68 @@
+
+<% layout("/layout/boilerplate.ejs") %>
+
+<body>
+
+  <form method="post" action="/listing"  novalidate class="container-sm form-size needs-validation" enctype="multipart/form-data"><br>
+        
+    <h2>Create a New Listing</h2><br>
+
+    <div class="new-form-div">
+      <label for="title" class="form-label">Title</label>
+      <input placeholder="Listing Title" name="listing[title]" class="form-control" required>
+      <div class="invalid-feedback">Title is required</div>
+      <div class="valid-feedback">Title looks good!!</div>
+    </div>
+
+    <div class="new-form-div">
+      <label for="description" class="form-label">Description</label>
+      <textarea placeholder="add description...." name="listing[description]"  class="form-control" required></textarea>
+      <div class="invalid-feedback"> Please enter short Description</div>
+    </div>
+
+    <div class="new-form-div">
+      <label for="image" class="form-label">Upload Image</label>
+      <input  name="listing[image]"  class="form-control" type="file">   
+    </div>
+
+    <div class="new-form-div">
+      <label for="category">Select Category</label>
+      <select class="form-select" id="category" name="listing[category]" aria-label="Default select example">
+        <option value="trending">Trending</option>
+        <option value="rooms">Rooms</option>
+        <option value="iconic cities">Iconic Cities</option>
+        <option value="mountains">Mountains</option>
+        <option value="castles">Castles</option>
+        <option value="camping">Camping</option>
+        <option value="farms">Farms</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6"> 
+        <div class="new-form-div">
+            <label for="price" class="form-label">Price</label>
+            <input placeholder="Enter Price" name="listing[price]"  class="form-control" required>
+            <div class="invalid-feedback">  Price should be Valid </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="new-form-div">
+            <label for="location" class="form-label">Location</label>
+            <input placeholder="Location" name="listing[location]"  class="form-control" required>
+            <div class="invalid-feedback">  Location should be Valid</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-form-div">
+      <label for="country" class="form-label">Country</label>
+      <input placeholder="Country" name="listing[country]"  class="form-control" required>
+      <div class="invalid-feedback">Location should be Valid</div>
+    </div><br>
+
+    <button class="btn btn-danger">ADD</button>
+   
+    </form>
+</body>

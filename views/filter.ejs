@@ -1,0 +1,32 @@
+
+
+<% layout("/layout/boilerplate.ejs")%>
+
+<div class="filter-list">
+   
+    <h2 class="ms-5 mb-3 mt-3"><b><%= id %> Listing</b></h2>
+
+    <div class="box">
+        <% if(posts.length==0){%>
+            <h1>Sorry, No Listing Found for this Filter</h1>
+        <%}%>
+
+        <% for(post of posts){ %>
+          <a href="/listing/<%= post._id %>" class="listing-link">
+            <div class="card" style="width: 20rem; height: 350px;">
+
+              <img src="<%=post.image.url%>" class="card-img-top" alt="something">
+              <div class="card-img-overlay"></div>
+              <div class="card-body">
+              <p class="card-text"><%= post.title %><br>
+                &#8377;
+                <%= typeof post.price === 'number' ? post.price.toLocaleString("en-IN") : 'N/A' %> / night
+                &nbsp; &nbsp;<i class="gst">+18% GST</i></p> 
+                </div>
+                
+            </div> 
+          </a>
+          
+        <% } %>
+    </div>
+</div>

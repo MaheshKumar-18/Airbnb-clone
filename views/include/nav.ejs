@@ -1,0 +1,46 @@
+
+
+  <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top border-bottom ">
+      <div class="container-fluid">
+          <a class="navbar-brand brand" href="/listing"><i class="fa-regular fa-compass"></i></a>
+          <a class="navbar-brand Explore me-auto"  href="/listing"><b>Explore</b></a>
+          <div class="navbar-nav search-form" >
+            <form class="d-flex" style="padding-left: 10px;" role="search" method="get" action="./listing">
+              <input class="form-control me-auto search-input " type="search" placeholder="Search Destination..." aria-label="Search" name="search"/>
+              <button class="btn btn-danger search-button" type="submit">Search</button>
+              <button class="btn btn-danger search-button2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+
+          <button class="navbar-toggler nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse searchAndLogin" id="navbarNavAltMarkup">
+            <div class="navbar-nav side-bar ms-auto">
+              <a class="nav-link" href="/listing/new">Airbnb your home</a>
+              <a class="nav-link Explore2" href="/listing/">Explore</a>
+              <%if(!currUser){%>
+                   <a class="nav-link"  href="/signup"><b>Sign up</b></a>
+                   <a class="nav-link" href="/login"><b>Login</b></a>
+              <% } %>
+
+              <%if(currUser){%>
+              <a class="nav-link" href="/logout"><b>Logout</b></a>
+              <% } %>
+             
+            </div>
+          </div>
+      </div>
+  </nav>
+
+
+<script>
+
+    let navbar_toggler=document.querySelector(".navbar-toggler");
+    let navbar=document.querySelector(".navbar");
+    navbar_toggler.addEventListener("click",()=>{
+         navbar.style.height="400px";
+    });
+    
+</script>

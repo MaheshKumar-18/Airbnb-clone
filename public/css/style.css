@@ -1,0 +1,448 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+body{
+    font-family: "Montserrat", sans-serif; 
+    min-height: 100vh;
+}
+.cont {
+  flex: 1; 
+}
+
+
+/* Style for navbar */
+
+.navbar{
+    background-color: white;
+    height: 65px;
+}
+.fa-compass{
+    color: red;
+    font-size: 30px;
+}
+.Explore2{
+    display: none;
+}
+.search-input{
+    width: 400px;
+}
+
+
+
+
+/* Style for footer */
+
+.fa-brands{
+    font-size: 20px;
+}
+.social i {
+    margin: 10px 5px 0px 0px;
+}
+.down{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(241, 241, 241);
+    text-align: center;  
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+
+
+
+/* Style for show.ejs file */
+
+.show-card{
+    width: 100% !important;
+    /* margin-left:auto !important; */
+}
+.show-img{
+     width: 96% !important;
+     height: 350px !important;
+}
+.show-page{
+    width: 100%;
+}
+.show-div{
+    display: flex;  
+    align-items: center;   
+    width: 100% !important;  
+}
+
+
+
+
+.links a{
+    text-decoration: none;
+}
+
+.box{
+    display: flex;
+    flex-wrap:wrap ;
+    margin: 10px;
+    justify-content: center;
+}
+
+.card{
+    margin:0px 20px 5px 20px;
+    border: none;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 14px;
+}
+
+.card-img-overlay{
+    opacity: 0.15;
+}
+.card-img-overlay:hover{
+    background-color: white;
+}
+
+.listing-link{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-toggler-icon{
+    color: black;
+}
+
+.form-label{
+    margin-bottom: 0px;
+}
+
+.new-form-div{
+       margin-bottom: 10px;
+}
+
+.form-size{
+    width: 70%;
+}
+
+.index-h2{
+    padding: 5px 28px;
+    font-weight: 900;
+}
+
+.navbar-nav a{
+    color: black;
+    font-weight: 600;
+}
+
+.align-items-center{
+    border-radius: 5px;
+    height: 100px;
+    margin:20px 80px 20px 80px;   
+}
+
+.btn-secondary{
+    margin-top: 12px;
+}
+
+
+
+/* review card Style */
+
+.review-card{
+    border: 2px solid rgb(173, 171, 171);
+    border-radius: 8px;
+    margin: 10px 20px;
+    padding: 20px;
+}
+
+
+
+/* Style for Reviews */
+
+.all-reviews{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+.review-card{
+    width:44%;
+    height: 200px;
+    overflow:auto;
+}
+
+
+
+
+/* Style for index.ejs file */
+
+.filter-toggle {
+    display: none;
+}
+.filter{
+      display: inline;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: 25px;
+      opacity: 0.7;     
+  }
+.hidden-filters{
+    display: none;
+}
+.filter:hover{
+    opacity: 1;  
+  }
+.index-card{
+    /* width: 350px !important; */
+    margin: 0px 30px 10px 10px;
+}
+
+
+
+
+.search-button2{
+    display: none;
+}
+
+.scrollable-filters{
+    display: flex;
+    overflow-x: auto;
+    margin-right: 10px;
+    scrollbar-width: none;
+}
+
+.filters{
+    display: flex;
+    margin: 5px 30px 5px 30px;
+    align-items: center;
+    padding: 5px;
+}
+
+.tax-toggle{
+    min-width: 280px;
+    border: 2px solid rgb(122, 121, 121);
+    padding: 10px 16px;
+    /* margin-left: 70px; */
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.gst{
+    display: none;
+}
+
+a{
+   color: black;
+   text-decoration: none;
+}
+
+.search-form{
+    display: none;
+}
+
+
+/* map */
+
+#map {
+    height: 400px;
+    width: 90%;
+    margin: auto;
+}
+.search-button{
+    margin-right: 4px;
+}
+
+
+@media (min-width: 1115px){
+    .index-card{
+        width: 350px !important; 
+    }
+
+}
+
+@media (max-width: 1205px) and  (min-width:1115px){
+    .index-card{
+        width: 420px !important; 
+        margin-left: 10px;
+    }
+
+}
+
+
+@media (min-width: 880px) and (max-width:1115px) {
+    .index-card{
+        width: 400px !important; 
+    }
+    .search-input{
+        width: 300px;
+    }
+}
+
+@media (min-width: 835px) and (max-width:935px) {
+    .index-card{
+        width: 340px !important; 
+    }
+    .box{
+        justify-content:center; 
+    }
+    .search-input{
+        width: 250px;
+    }
+}
+
+@media (min-width:700px ) and (max-width:775px) {
+    .index-card{
+        width: 300px !important; 
+        margin: 0px 10px 10px 10px;
+    }
+    .box{
+       justify-content:center; 
+    }
+}
+
+@media (min-width: 540px ) and (max-width:700px) {
+    .index-card{
+        width: 450px !important; 
+        margin: 0px 10px 10px 10px;
+    }
+    .box{
+        justify-content:center; 
+    }
+}
+
+
+@media (min-width: 540px ) and (max-width:700px) {
+    .index-card{
+        width: 450px !important; 
+        margin: 0px 10px 10px 10px;
+    }
+    .box{
+       justify-content:center; 
+    }
+}
+
+@media (min-width:100px ) and (max-width:835px ) {
+    .search-input{
+        width: 180px;
+    }
+}
+
+@media (min-width:387px ) and (max-width:520px ) {
+    .Explore{
+        display: none;
+    }
+    .search-button{
+        width: 40px;
+        display: none;
+    }
+    .brand{
+        margin-right:0px;
+    }
+    .search-div{
+        margin-left: 0px;
+    }
+    .search-button2{
+        display: inline;
+    }
+    .Explore2{
+        display: inline;
+    }
+}
+
+@media (max-width:387px ){
+    .search-button{
+        width: 40px;
+        display: none;
+    }
+    .search-button2{
+        display: inline;
+    }
+    .search-input{
+        width: 170px;
+        padding: 0px 2px;
+    }
+    .Explore2{
+        display: inline;
+    }
+    .Explore{
+        display: none;
+    }
+    .brand {   
+        margin-right: 0px;
+    }
+    .brand i{
+        padding-top: 3px;
+        font-size: 28px;
+        margin-right: 0px;
+    }
+    .nav-toggle{ 
+        font-size: 15px;
+     }
+}
+
+@media (min-width:900px ){
+    .show-card{
+        width: 770px !important;
+    }  
+    .Explore{
+        margin-right: 100px;
+    }
+}
+
+@media (max-width:900px ){  
+    .review-card{
+        width: 90%;
+    }
+    .show-card{
+        width: 90% !important;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .popupMsg{
+        width: 90%;
+    }
+}
+
+@media (max-width:650px ) {
+    .scrollable-filters{
+        display: none !important;
+    }
+    .filter-toggle{
+        display: inline;
+        font-size: small;
+        padding: 4px 3px;
+        margin-right: 3px;
+    }
+    .hidden-filters{
+        /* display: flex; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: rgb(231, 234, 233);
+        border-radius: 20px;
+    }
+}
+
+.tax-toggle{
+    padding-left: 2px;
+    padding-right: 3px;
+}
+
+.toggle{
+   width: 250px;
+}
+
+@media (min-width:1280px){
+    .Explore{
+        margin-right: 320px !important;
+    }
+}
+
+@media (max-width:1280px) and (min-width:1130px){
+   .Explore{
+        margin-right: 150px !important;
+    }
+}
