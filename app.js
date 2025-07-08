@@ -17,7 +17,7 @@ const MongoStore=require("connect-mongo")
 
 // const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 
-const mongodbUrl= process.env.mongodbUrl;
+const mongodbUrl= process.env.MONGODBURL;
 
 
 
