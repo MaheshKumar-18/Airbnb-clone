@@ -402,7 +402,8 @@ a{
         justify-content: center;
     }
     .popupMsg{
-        width: 90%;
+        width: 100%;
+        margin-left: unset;
     }
 }
 
